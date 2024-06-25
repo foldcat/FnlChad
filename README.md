@@ -1,10 +1,12 @@
 # FnlChad
 
 Nvchad [starter](https://github.com/NvChad/starter/tree/main) repo 
-completely ported to fennel.
+completely ported to fennel via 
+[nfnl](https://github.com/Olical/nfnl).
 
 To install, simply run 
 ```bash
+rm -rf ~/.local/share/nvim
 git clone https://github.com/foldcat/FnlChad ~/.config/nvim && nvim
 ```
 Run `:MasonInstallAll` command after lazy.nvim finishes 
