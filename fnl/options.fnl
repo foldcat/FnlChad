@@ -1,5 +1,5 @@
 (require :nvchad.options)
 
-(local o vim.o)
+(local opt vim.o)
 
-(set o.cursorlineopt :both)	
+(set opt.cursorlineopt :both)	
