@@ -1,1 +1,1 @@
-{:ui {:theme "oxocarbon"}}
+{:ui {:theme :oxocarbon}}

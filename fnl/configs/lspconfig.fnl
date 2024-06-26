@@ -1,7 +1,7 @@
-(local nvcfg (require "nvchad.configs.lspconfig"))
+(local nvcfg (require :nvchad.configs.lspconfig))
 
-(local lspconfig (require "lspconfig"))
-(local servers ["html"])
+(local lspconfig (require :lspconfig))
+(local servers [:html])
 
 
 (each [_ lsp (ipairs servers)]

@@ -1,22 +1,22 @@
 [{1 :stevearc/conform.nvim
     :config (fn []
-             (require "configs.conform"))}
+             (require :configs.conform))}
 
  {1 :neovim/nvim-lspconfig
     :config (fn []
-              (local cfg (require "nvchad.configs.lspconfig"))
+              (local cfg (require :nvchad.configs.lspconfig))
               (cfg.defaults)
-              (require "configs.lspconfig"))}
+              (require :configs.lspconfig))}
 
  {1 :williamboman/mason.nvim
     :opts 
     {:ensure_installed
-     ["lua-language-server" "stylua" "html-lsp"]}}
+     [:lua-language-server :stylua :html-lsp]}}
 
  {1 :nvim-treesitter/nvim-treesitter
     :opts 
     {:ensure_installed 
-     ["vim" "lua" "vimdoc" "fennel"]}}
+     [:vim :lua :vimdoc :fennel]}}
 
  ; community plugin repo
  {1 "NvChad/nvcommunity"}
@@ -25,17 +25,17 @@
 
  ; infer parentheses, uncomment to use
  ; {1 :gpanders/nvim-parinfer
- ;    :ft ["fennel"]}
+ ;    :ft [:fennel]}
 
  ; if you have rust, don't use gpanders/nvim-parinfer
  ; use this instead
  ; {1 :eraserhd/parinfer-rust
- ;    :ft ["fennel"]
+ ;    :ft [:fennel]
  ;    :build "cargo build --release"}
 
  ; vim motion for lisp editing
  ; {1 :julienvincent/nvim-paredit
- ;  :ft [:clojure :fennel]
+ ;  :ft [:fennel]
  ;  :config (fn []
  ;           (let [paredit (require :nvim-paredit)]
  ;             (paredit.setup)))}

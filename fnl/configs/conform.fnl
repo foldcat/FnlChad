@@ -1,5 +1,5 @@
-(local conform (require "conform"))
+(local conform (require :conform))
 
 (conform.setup
    {:formatters_by_ft 
-   	{:lua ["stylua"]}})
+   	{:lua [:stylua]}})
