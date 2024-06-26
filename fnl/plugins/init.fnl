@@ -19,7 +19,7 @@
      [:vim :lua :vimdoc :fennel]}}
 
  ; community plugin repo
- {1 "NvChad/nvcommunity"}
+ {1 :NvChad/nvcommunity}
  ; install plugin from said repo
  ; {:import "nvcommunity.diagnostics.trouble" }
 
