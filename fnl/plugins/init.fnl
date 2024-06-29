@@ -21,7 +21,7 @@
  ; community plugin repo
  {1 :NvChad/nvcommunity}
  ; install plugin from said repo
- ; {:import "nvcommunity.diagnostics.trouble" }
+ ; {:import :nvcommunity.diagnostics.trouble}
 
  ; infer parentheses, uncomment to use
  ; {1 :gpanders/nvim-parinfer
@@ -49,15 +49,15 @@
 
  ; surround text with ()
  {1 :kylechui/nvim-surround
-    :event "VeryLazy"
+    :event :VeryLazy
     :config 
     (fn []
-      (let [surround (require "nvim-surround")
+      (let [surround (require :nvim-surround)
             config {}]
         (surround.setup config)))}
               
 
  ; plug neovim with a repl
  {1 :Olical/conjure
-    :ft ["fennel"]}]
+    :ft [:fennel]}]
 
