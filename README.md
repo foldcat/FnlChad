@@ -38,6 +38,7 @@ to convert existing lua code to fennel
 directly to lua after saving any fennel files in this config
 - due to the above reason, you must also manually remove the orphaned
 `.lua` file in `/lua` directory after removing `.fnl` files from `/fnl`
+- for an example config, see [this](https://git.sr.ht/~koyuki/nvchad2.5)
 
 ### Credits
 
