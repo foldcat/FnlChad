@@ -18,6 +18,14 @@
     {:ensure_installed 
      [:vim :lua :vimdoc :fennel]}}
 
+ {1 :hrsh7th/nvim-cmp
+    :config 
+    (fn [_ opts]
+      (table.insert
+        opts.sources 1 
+        {:name :conjure}) ; autocomplete for fennel
+      ((. (require :cmp) :setup) opts))}
+
  ; community plugin repo
  {1 :NvChad/nvcommunity}
  ; install plugin from said repo
@@ -58,6 +66,8 @@
               
 
  ; plug neovim with a repl
- {1 :Olical/conjure
-    :ft [:fennel]}]
-
+ {1 :PaterJason/cmp-conjure
+    :ft [:fennel]
+    :dependencies 
+    {1 :Olical/conjure
+       :ft [:fennel]}}]
