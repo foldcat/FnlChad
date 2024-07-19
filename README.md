@@ -1,5 +1,8 @@
 # FnlChad
 
+FnlChad is now officially [here](https://github.com/NvChad/starter.fnl). 
+All the future updates will be redirected there.
+
 Nvchad [starter](https://github.com/NvChad/starter/tree/main) repo 
 completely ported to fennel via 
 [nfnl](https://github.com/Olical/nfnl).
